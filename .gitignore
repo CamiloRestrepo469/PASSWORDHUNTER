@@ -3,10 +3,15 @@
 
 # Caché de Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
-# Configuración de VS Code
+# Archivos de VS Code
 .vscode/
 
-# Configuración de PyCharm
+# Archivos de PyCharm
 .idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
