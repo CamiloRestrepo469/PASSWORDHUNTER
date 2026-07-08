@@ -1,21 +1,24 @@
-from src.eventos import Eventos
+"""
+=========================================================
+Archivo: main.py
+Proyecto: Password Hunter - The Ancient Vaults
+
+Punto de entrada principal del programa.
+
+Autor: Camilo Restrepo
+=========================================================
+"""
+from src.juego import JuegoCazador
 
 
 def main():
+    """
+    Función principal del programa.
+    """
 
-    Eventos.titulo()
+    juego = JuegoCazador()
 
-    Eventos.bienvenida("Camilo")
-
-    Eventos.separador()
-
-    Eventos.mensaje("Has encontrado un antiguo templo.")
-
-    Eventos.mensaje("La puerta del primer cofre está cerrada.")
-
-    Eventos.error("La contraseña ingresada no es válida.")
-
-    Eventos.despedida()
+    juego.ejecutar()
 
 
 if __name__ == "__main__":
