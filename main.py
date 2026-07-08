@@ -1,29 +1,21 @@
-from src.jugador import Jugador
+from src.eventos import Eventos
 
 
 def main():
 
-    jugador = Jugador("Camilo")
+    Eventos.titulo()
 
-    jugador.mostrar_estado()
+    Eventos.bienvenida("Camilo")
 
-    jugador.agregar_puntos(10)
+    Eventos.separador()
 
-    jugador.agregar_puntos(25)
+    Eventos.mensaje("Has encontrado un antiguo templo.")
 
-    jugador.agregar_puntos(50)
+    Eventos.mensaje("La puerta del primer cofre está cerrada.")
 
-    jugador.agregar_puntos(-20)
+    Eventos.error("La contraseña ingresada no es válida.")
 
-    jugador.mostrar_estado()
-
-    print()
-
-    print(jugador)
-
-    jugador.reiniciar()
-
-    jugador.mostrar_estado()
+    Eventos.despedida()
 
 
 if __name__ == "__main__":
