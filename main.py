@@ -1,64 +1,29 @@
-"""
-=========================================================
-Archivo: main.py
-
-Proyecto:
-Password Hunter - The Ancient Vaults
-
-Este archivo se utiliza temporalmente para realizar
-pruebas de los módulos desarrollados.
-
-Posteriormente será reemplazado por el menú principal
-del juego.
-
-Autor:
-Camilo Restrepo
-=========================================================
-"""
-
-# =====================================================
-# IMPORTACIONES
-# =====================================================
-
-from src.password import Password
-from src.excepciones import ErrorJuego
+from src.jugador import Jugador
 
 
 def main():
-    """
-    Función principal de pruebas.
 
-    Permite comprobar que la clase Password genera
-    correctamente contraseñas válidas y que el sistema
-    de excepciones funciona adecuadamente.
-    """
+    jugador = Jugador("Camilo")
 
-    print("=" * 60)
-    print("      PASSWORD HUNTER - LABORATORIO DE PRUEBAS")
-    print("=" * 60)
+    jugador.mostrar_estado()
 
-    motor = Password()
+    jugador.agregar_puntos(10)
 
-    try:
+    jugador.agregar_puntos(25)
 
-        longitud = int(
-            input("\nIngrese la longitud de la contraseña: ")
-        )
+    jugador.agregar_puntos(50)
 
-        password = motor.generar(longitud)
+    jugador.agregar_puntos(-20)
 
-        print("\nContraseña generada:")
-        print(password)
+    jugador.mostrar_estado()
 
-        motor.validar(password)
+    print()
 
-        print("\nLa contraseña es COMPLETAMENTE válida.")
+    print(jugador)
 
-    except ErrorJuego as error:
+    jugador.reiniciar()
 
-        print("\nSe produjo un error:")
-
-        print(error)
+    jugador.mostrar_estado()
 
 
 if __name__ == "__main__":
