@@ -6,9 +6,7 @@ Proyecto: Password Hunter - The Ancient Vaults
 Clase encargada de generar y validar contraseñas
 seguras para el juego.
 
-Versión 2
 - Algoritmo de generación equilibrado.
-- Sin caracteres repetidos.
 - Métodos privados.
 - Código reutilizable.
 - Totalmente documentado.

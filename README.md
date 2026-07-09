@@ -1,7 +1,7 @@
 # PASSWORDHUNTER
 # 🔐 Password Hunter - The Ancient Vaults
 
-## Descripción
+## Descripción python main.py
 
 **Password Hunter - The Ancient Vaults** es un juego interactivo desarrollado en **Python** utilizando **Programación Orientada a Objetos (POO)**.
 
